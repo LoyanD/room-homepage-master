@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Room homepage</title>
+  </head>
+  <body>
+    <div class="topNav" id="myTopNav">
+      <img src="images/logo.svg" alt="logo" />
+      <div class="navbar">
+        <a href="#">home</a>
+        <a href="#">shop</a>
+        <a href="#">about</a>
+        <a href="#">contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="openResponsive()">
+          <img src="images/icon-hamburger.svg" alt="" />
+        </a>
+      </div>
+    </div>
+
+    <section class="header">
+      <div class="slide">
+        <img src="images/desktop-image-hero-1.jpg" alt="image d'illustration" />
+        <div class="description">
+          <h2>Discover innovative ways to decorate</h2>
+          <p>
+            We provide unmatched quality, comfort, and style for property owners
+            across the country. Our experts combine form and function in
+            bringing your vision to life. Create a room in your own style with
+            our collection and make your property a reflection of you and what
+            you love.
+          </p>
+          <button class="buttonShopNow" type="button">
+            <h3>S H O P N O W</h3>
+            <svg width="40" height="12" xmlns="http://www.w3.org/2000/svg"><path d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z" fill="#000" fill-rule="nonzero"/></svg>
+          </button>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="images/desktop-image-hero-2.jpg" alt="image d'illustration" />
+        <div class="description">
+          <h2>We are available all across the globe</h2>
+          <p>
+            With stores all over the world, it's easy for you to find furniture
+            for your home or place of business. Locally, we’re in most major
+            cities throughout the country. Find the branch nearest you using our
+            store locator. Any questions? Don't hesitate to contact us today.
+          </p>
+          <button class="buttonShopNow" type="button">
+            <h3>S H O P N O W</h3>
+            <img src="images/icon-arrow.svg" alt="image d'illustration" />
+          </button>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="images/desktop-image-hero-3.jpg" alt="image d'illustration" />
+        <div class="description">
+          <h2>Manufactured with the best materials</h2>
+          <p>
+            Our modern furniture store provide a high level of quality. Our
+            company has invested in advanced technology to ensure that every
+            product is made as perfect and as consistent as possible. With three
+            decades of experience in this industry, we understand what customers
+            want for their home and office.
+          </p>
+          <button class="buttonShopNow" type="button">
+            <h3>S H O P N O W</h3>
+            <img src="images/icon-arrow.svg" alt="image d'illustration" />
+          </button>
+        </div>
+      </div>
+      <div class="buttonContainer">
+        <button onclick="previousSlide()" type="button">
+          <img src="images/icon-angle-left.svg" alt="flèche gauche" />
+        </button>
+        <button onclick="nextSlide()" type="button">
+          <img src="images/icon-angle-right.svg" alt="flèche droite" />
+        </button>
+      </div>
+    </section>
+    <section class="main">
+      <div class="aboutImg">
+        <img src="images/image-about-dark.jpg" alt="image d'illustration" />
+      </div>
+      <div class="aboutText">
+        <h4>About our furniture</h4>
+        <p>
+          Our multifunctional collection blends design and function to suit your
+          individual taste. Make each room unique, or pick a cohesive theme that
+          best express your interests and what inspires you. Find the furniture
+          pieces you need, from traditional to contemporary styles or anything
+          in between. Product specialists are available to help you create your
+          dream space.
+        </p>
+      </div>
+      <div class="aboutImg">
+        <img src="images/image-about-light.jpg" alt="image d'illustration" />
+      </div>
+    </section>
+
+    <div class="attribution">
+      Challenge by<a
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Loyan DAGNET</a>.
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Spartan', sans-serif;
+}
+
+a,
+p {
+  font-size: 12px;
+}
+
+p {
+  color: var(--darkGray);
+  font-family: 'Spartan' sans-serif;
+}
+
+h2 {
+  color: var(--black);
+  padding-bottom: 20px;
+}
+
+button:focus {
+  outline: none;
+}
+
+/*
+##########################
+VARIABLES COULEURS
+##########################
+*/
+
+:root {
+  --darkGray: hsl(0, 0%, 63%);
+  --black: hsl(0, 0%, 0%);
+  --white: hsl(0, 0%, 100%);
+  --veryDarkGray: hsl(0, 0%, 27%);
+}
+
+/*
+#########################
+NAVBAR
+########################
+*/
+.topNav {
+  position: fixed;
+  top: 0;
+  padding: 40px 0 0 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+  z-index: 999;
+}
+
+.topNav .icon {
+  display: none;
+}
+
+.topNav > img {
+  width: 90px;
+  margin-right: 30px;
+}
+
+.navbar a {
+  position: relative;
+  padding-left: 10px;
+  text-decoration: none;
+  color: var(--white);
+}
+
+.navbar a:hover::after {
+  content: '';
+  position: absolute;
+  bottom: -7px;
+  right: 0;
+  width: 20px;
+  border-bottom: 3px solid var(--white);
+}
+
+/*
+########################
+SLIDER
+########################
+*/
+
+.header {
+  position: relative;
+}
+
+.slide {
+  width: 100%;
+}
+
+.slide > img {
+  width: 60%;
+  height: auto;
+}
+
+.description {
+  width: 40%;
+  padding: 5%;
+}
+
+.buttonContainer {
+  position: absolute;
+  bottom: 0;
+  left: 60%;
+  display: flex;
+}
+
+.description h2 {
+  font-size: 30px;
+}
+
+#activeSlide {
+  display: block;
+}
+
+.buttonShopNow {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  width: 260px;
+  margin-top: 70px;
+  border: none;
+  background-color: white;
+}
+
+.buttonShopNow h3 {
+  word-spacing: 10px;
+  font-weight: lighter;
+  margin-right: 10px;
+}
+
+.buttonShopNow:hover {
+  color: var(--darkGray);
+}
+
+.buttonShopNow:hover svg {
+  fill: var(--darkGray);
+}
+
+.buttonContainer button {
+  cursor: pointer;
+  border: none;
+  background-color: var(--black);
+  width: 70px;
+  height: 60px;
+}
+
+.buttonContainer button:hover {
+  background-color: var(--veryDarkGray);
+}
+
+/*
+########################
+ABOUT
+########################
+*/
+.main {
+  display: flex;
+  flex-direction: row;
+}
+
+.aboutText {
+  width: 40%;
+  margin: auto;
+}
+
+.aboutText * {
+  padding: 0 40px;
+}
+
+.aboutText h4 {
+  margin-bottom: 1em;
+  font-size: 20px;
+}
+
+.aboutImg {
+  width: 30%;
+}
+
+.aboutImg > img {
+  width: 100%;
+  height: auto;
+}
+
+/*
+########################
+FOOTER
+#######################
+*/
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 20px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/*
+#######################
+MEDIA QUERIES
+#######################
+*/
+
+@media screen and (max-width: 1070px) {
+  .buttonShopNow {
+    margin: 30px 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .slide {
+    flex-direction: column;
+  }
+
+  .slide > img {
+    width: 100%;
+  }
+
+  .description {
+    height: 300px;
+    width: 100%;
+    padding: 5% 20%;
+  }
+
+  .buttonContainer {
+    position: absolute;
+    bottom: 300px;
+    right: 0;
+    display: flex;
+  }
+}
